@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --yellow: #F6F7A9;
+    --black: #202020;
+    --darkgrey: #4C4C4B;
+    --lightgrey: #F7F8F8;
+    --washelightgrey: #E0DEDD;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*--------------------------------- offer section start -------------------------*/
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.h1 {
+    padding-top: 100px;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--darkgrey);
+}
+
+.p {
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.menu-card {
+    margin-top: 100px;
+    /* display: grid;
+    grid-template-columns: auto auto auto auto; */
+    display: flex;
+    position: relative;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-card .box {
+    flex: 0 1 73px; 
+    /* max-width: 273px; */
+    height: 270px;
+    box-shadow: 0 0 10px var(--washelightgrey);
+}
+
+.menu-card .box .input {
+    background-color: transparent;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    margin: 33px;
+    text-align: center;
+    line-height: 50px;
+    color: var(--darkgrey);
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.menu-card .box .input:hover {
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+.bol {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 99%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--yellow);
+    color: var(--black);
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 30px;
+    transition: all 0.5s ease;
+}
+
+.bol:hover {
+    background-color: var(--darkgrey);
+    color: #fff;
+}
+
+/*--------------------------------- offer section end -------------------------*/
+
+
+/*--------------------------------- about section start --------------------*/
+#about-section {
+    margin-top: 150px;
+}
+
+.orab {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+}
+
+.orab .img-card {
+    position: relative;
+    height: 600px;
+    width: 533px;
+    box-shadow: 0 0 20px var(--washelightgrey);
+}
+
+.orab .img-card img {
+    position: absolute;
+    bottom: -80px;
+    right: -80px;
+}
+
+.orab .img-text {
+    margin-left: 200px;
+}
+
+.orab .img-text p {
+    font-size: 25px;
+    padding-top: 40px;
+    font-weight: 200;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.dol {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    background-color: var(--yellow);
+    color: var(--black);
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 30px;
+    transition: all 0.5s ease;
+}
+
+.dol:hover {
+    background-color: var(--darkgrey);
+    color: #fff;
+}
+
+
+/*--------------------------------- about section end ----------------------*/
+#decoration-section {
+    min-height: 765px;
+    background-image: url(../img/lamp.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 180px;
+    background-color: #f7f7f7;
+}
+
+.decoration-content {
+    padding: 100px;
+    display: flex;
+    justify-content: end;
+}
+
+.decoration-content .right-decoration {
+    width: 50%;
+    padding-left: 100px;
+}
+
+.decoration-content .right-decoration h3 {
+    font-size: 45px;
+    color: var(--darkgrey);
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.decoration-content .right-decoration p {
+    font-size: 20px;
+    padding-top: 30px;
+    color: var(--black);
+    font-family: 'Quicksand', sans-serif;
+}
+
+.decoration-content .right-decoration a {
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    color: var(--black);
+    height: 50px;
+    background-color: var(--yellow);
+    text-align: center;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: sans-serif;
+    margin-top: 80px;
+    transition: all 0.5s ease;
+}
+
+.decoration-content .right-decoration a:hover {
+    background-color: var(--black);
+    color: #fff;
+}
+
+/*---------------------------------decoration section start ------------------*/
+
+/*--------------------------------- news section start ------------------*/
+.news-text {
+    margin-top: 80px;
+}
+
+.news-text h3 {
+    font-size: 50px;
+    color: var(--darkgrey);
+    font-weight: bold;
+}
+
+.news-text p {
+    font-size: 20px;
+    color: var(--black);
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 30px;
+}
+
+.box-wraper {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.box-wraper .card {
+    width: 550px;
+    margin-top: 80px;
+    background-color: #fff;
+    box-shadow: 0 0 20px var(--washelightgrey);
+}
+
+.box-wraper .card .hellp-card {
+    width: 97%;
+    margin: 0 auto;
+}
+
+.hellp-card .img-box {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.hellp-card .img-box img {
+    width: 100%;
+}
+
+.hellp-card .coments-card {
+    margin-top: 30px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto auto auto auto;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--darkgrey);
+}
+
+.hellp-card .text-card {
+    margin-top: 30px;
+    padding-left: 30px;
+}
+
+.hellp-card .text-card h3 {
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+.hellp-card .text-card p {
+    padding-top: 20px;
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 30px;
+}
+
+
+/*---------------------------------news section end ---------------------*/
+/*---------------------------------request section start ----------------*/
+.request-text {
+    margin-top: 200px;
+}
+
+.request-text h3 {
+    font-size: 50px;
+    color: var(--darkgrey);
+    font-weight: 700;
+}
+
+.request-text p {
+    font-size: 22px;
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 30px;
+}
+
+.request-hellp {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 50px;
+}
+
+.request-hellp {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+.blod .img-saqlash {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: red;
+}
+
+.blod .img-saqlash::after {
+    position: absolute;
+    content: "";
+    top: -70px;
+    right: -70px;
+    width: 600px;
+    height: 600px;
+    background-color: #fff;
+    box-shadow: 0 0 50px var(--washelightgrey);
+    z-index: -1;
+}
+
+.blod .img-saqlash img {
+    width: 100%;
+    height: 100%;
+}
+
+.request-hellp .black .doten{
+    width: 570px;
+    height: 75px;
+    background-color: #fff;
+    margin: 15px 0;
+    font-size: 17px;
+    float: left;
+    padding: 0 30px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 30px -12px rgba(0,0,0,.3);
+}
+.request-hellp .black .dublecase{
+    min-height: 180px;
+    font-size: 17px;
+    padding: 30px;
+    border: none;
+    box-shadow: 0 0 30px -12px rgba(0,0,0,.3);
+    float: left;
+    width: 570px;
+    padding: 15px 0;
+    border: none;
+    outline: none !important;
+}
+.request-hellp .button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+}
+.request-hellp .button .form-button{
+    width: 230px;
+    height: 80px;
+    border: none;
+    border-radius: 100px;
+    background-color: #2D2D2D;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #e1e7d8;
+    margin-top: 35px;
+}
+
+
+/*---------------------------------request section end ---------------*/
+/*-------------------------- footer style ------------------------*/
+footer{
+    margin-top: 100px;
+}
+footer .wraper{
+    width: 1259px;
+    height: 527px;
+    background-color: #2D2D2D;
+    padding-top: 90px;
+    padding-bottom: 70px;
+    border-radius: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .foottter{
+    width: 100vw;
+    height: 200px;
+    background-color: var(--yellow);
+    margin-top: 50px;
+}
+.foottter .avraper{
+    display: flex;
+    margin-left: 650px;
+    padding-top: 50px;
+   
+}
+.foottter .avraper a{
+    font-size: 25px;
+    color: #000;
+    padding-left: 15px;
+}
+.foottter .thebestfooter{
+    margin-left: 610px;
+    margin-top: 35px;
+}
