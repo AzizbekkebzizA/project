@@ -1,322 +1,52 @@
-* {
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-
-:root {
-    --yellow: #FFBE33;
-    --darkyellow: #e69c00;
-    --black: #0C0C0C;
-    --darkblue: #222831;
-    --gray: #F1F2F3;
-}
-
-html {
-    overflow-x: hidden;
-}
-
-body {
-    font-family: 'Open Sans', sans-serif;
-}
-
-section {
-    padding: 90px 0;
-}
-
-.container {
-    width: 76%;
-    margin: 0 auto;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 30px;
-    background-color: var(--yellow);
-    color: #FFF;
-    border-radius: 30px;
-    transition: all 0.3s;
-}
-
-.btn:hover {
-    background-color: var(--darkyellow);
-}
-
-.title-text {
-    font-family: 'Dancing Script', cursive;
-    font-size: 40px;
-    margin: 20px 0;
-    text-align: center;
-}
-
-.header-wrapper {
-    position: relative;
-    min-height: 100vh;
-}
-
-.header-wrapper .header-img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.header-wrapper .header-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-header .logo-name {
-    font-family: 'Dancing Script', cursive;
-    font-size: 32px;
-    font-weight: bold;
-    color: #FFF;
-}
-
-/*-------------navbar start--------------------*/
-.navbar {
-    display: flex;
-    align-items: center;
-}
-
-.navbar-wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
-}
-
-.navbar-menu {
-    margin-right: 100px;
-}
-
-.navbar-menu a {
-    display: inline-block;
-    text-transform: uppercase;
-    font-weight: 500;
-    padding: 5px 20px;
-    color: #FFF;
-    transition: all 0.3s ease;
-}
-
-.navbar-menu a:hover {
-    color: var(--yellow);
-}
-
-.navbar-menu a.active {
-    color: var(--yellow);
-}
-
-.navbar-menu ul {
-    display: flex;
-}
-
-.navbar .compenents a {
-    display: inline-block;
-    margin-right: 15px;
-    color: #FFF;
-    transition: all 0.2s;
-}
-
-.navbar .compenents a:hover {
-    color: var(--yellow);
-}
-
-/*-------------navbar end--------------------*/
-/*-------------main section start--------------------*/
-
-/*-------------main section end-------------------*/
-ul {
-    display: flex;
-}
-
-ul li a {
-    padding: 15px;
-    color: #FFBE33;
-}
-
-.owl-carousel {
-    display: flex;
-    padding: 30px 0;
-}
-
-.owl-carousel .item-text {
-    width: 50%;
+.true{
+    background-color: rgb(8,177,8);
     color: #fff;
 }
-
-.owl-carousel .item-text h2 {
-    margin: 0;
-    font-family: 'Dancing Script', cursive;
-    font-size: 55px;
-    font-weight: bold;
+.false{
+    background-color: rgb(211, 32, 29);
+    color: #fff;
+}
+@keyframes rotate{
+    0%{
+        background-color: aqua;
+        width:  0%;
+    }
+    25%{
+        width: 25%;
+        background-color: green;
+    }
+    50%{
+        width:  50%;
+        background-color: yellow;
+    }
+    75%{
+        width:  75%;
+        background-color: rgb(236, 155, 7);
+    }
+    100%{
+        width:  100%;
+        background-color: red;
+    }
 }
 
-.owl-carousel .item-text p {
-    margin: 15px 0;
-}
-
-.owl-carousel .carousel-btn {
-    padding: 10px 40px;
-    margin: 10px 0;
-}
-
-
-.owl-carousel .owl-nav {
-    display: none;
-}
-
-/*------------main section carousel start-------------------*/
-.owl-carousel .owl-dots {
-    margin-top: 120px;
-
-}
-
-.owl-dots button.owl-dot {
-    background-color: #fff;
-    border-radius: 50%;
-    height: 12px;
-    width: 12px;
+.box-one{
+    width: 205px;
+    height: 15px;
+    background-color: #ccc;
     position: relative;
-    margin: 0 4px;
-}
-
-.owl-dots button.owl-dot.active span {
-    background-color: var(--yellow);
-    border-radius: 50%;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    transform: scale(1.7);
-}
-
-/*---------------------offer-section start-----------------------*/
-#offer-section {}
-
-#offer-section .offer {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 30px;
-}
-
-.offer-section .container .offer {
-    display: flex;
-}
-
-#offer-section .card {
-    display: flex;
-    align-items: center;
-    background-color: var(--darkblue);
-    padding: 20px;
-    border-radius: 6px;
-}
-
-#offer-section .card-header {
-    width: 175px;
-    height: 175px;
-    border-radius: 50%;
     overflow: hidden;
-    border: 5px solid var(--yellow);
-    margin: 20px;
-
 }
 
-#offer-section .card-header img {
+.box{
+    position: absolute;
     width: 100%;
     height: 100%;
-    transition: all 0.3s ease;
-
+    animation-name: rotate;
+    animation-delay: 30s;
+    animation: rotate 30s linear 3s 2 ;
 }
-
-#offer-section .card-header:hover img {
-    transform: scale(1.1);
-}
-
-#offer-section .card-title {
-    font-family: 'Dancing Script', cursive;
-    color: #fff;
-}
-
-#offer-section .card-title h4 {
-    font-size: 24px;
-}
-
-#offer-section .card-title .sale {
-    display: block;
-    font-size: 40px;
-    margin: 10px 0;
-}
-
-#offer-section .sale span {
-    font-size: 16px;
-}
-
-/*---------------------offer-section end-------------------------*/
-/*---------------------menu-section-start-------------------*/
-#menu-section {
-    padding-top: 0;
-}
-
-#menu-section .menu-header {
-    text-align: center;
-}
-
-#menu-section .filter-menu {
-    margin: 45px 0;
-}
-
-#menu-section .filter-menu a {
-    display: inline-block;
-    color: var(--black);
-    background-color: transparent;
-    padding: 10px 28px;
-    border-radius: 30px;
-}
-
-#menu-section .filter-menu .active {
-    background-color: var(--darkblue);
-    color: #fff;
-}
-
-#menu-section .menu-content {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 30px;
-}
-
-#menu-sevtion .menu-content .card {
-
-    padding: ;
-}
-
-#menu-section .menu-content .card-header {
-    background-color: var(--gray);
-}
-
-#menu-section .card-header img {
-    display: block;
-    max-width: 145px;
-    margin: 0 auto;
-
-}
-
-#menu-section .menu-content .card-body {
-    background-color: var(--darkblue);
-}
-
-#menu-section .menu-content .card-footer {}
-
-
-
-
-/*---------------------menu-section-end---------------------*/
