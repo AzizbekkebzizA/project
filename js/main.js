@@ -41,7 +41,7 @@ const mark = document.querySelector(".mark");
 let myanswer = document.querySelector(".myanswer");
 let s =0;
 let loading = 0;
-let j = 0, count = 0, answers = "ACABCABACB", checkCount = 0;
+let j = 0, count = 0, answers = "BCBABCBABB", checkCount = 0;
 for (let i = 0; i < test.length; i++) {
     testContent.innerHTML += `
         <ul class="list-group">
