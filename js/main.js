@@ -1,6 +1,6 @@
 const test=[
     ["Akmeologiya ilmiy ilk marotaba kim fanga kiritgan?","X.Shayxova","N.A.Ribnikov","B.G.Ananev"],
-    ["Yetuklik davri qaysi davirga mos keladi?","10-14","20-25","18-20"],
+    ["Yetuklik davri qaysi davirlarga mos keladi?","10-14","20-25","18-20"],
     ["Akmealogiyada yuldizli onlar atamasini qaysi olim fanga kiritgan?","G.Tilayeva","N.V.kuzmina","X.Shayxova"],
     ["Akmeologiyada pedagogik refleksiya tushunchasi qanday manoni anglatadi?","Ortga nazar tashlash","Oldinga siljish","Yuksak maraga erishish"],
     ["Pedagogik akmealogiya fanida pedagogik refleksiyani turlari nechta?","3","5","4"],
